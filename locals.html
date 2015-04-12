@@ -1,0 +1,95 @@
+<head>
+  <title>locals</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body>
+ 
+</body>
+
+<template name="layout">
+	{{#ionBody}}
+		{{> ionNavBar class="bar-positive"}}
+		{{#ionNavView}}
+	  		{{> yield}}
+		{{/ionNavView}}
+	{{/ionBody}}
+</template>
+
+<template name="interests">
+  <header>
+    <h1>Choose your interests</h1>
+
+    <div class="interests">
+      <form class="find-interests">
+        <input type="text" name="search-interests" class="search-interests" placeholder="Search for interests" />
+      </form>
+
+      <ul class="foundinterests">
+        {{#each interests}}
+          {{> interest}}
+        {{/each}}
+      </ul>
+    </div>
+  </header>
+
+  <section class="choseninterests">
+  	<ul>
+      {{#each choseninterests}}
+        {{> choseninterest}}
+      {{/each}}
+    </ul>
+  </section>
+
+  <footer>
+    <a href="itineraries" class="button">Search for itineraries</a>
+  </footer>
+</template>
+
+<template name="guides">
+  <header>
+    <h1>Guides</h1>
+  </header>
+  <section>
+    <ul class="guideslist">
+      {{#each guides}}
+        {{> guide}}
+      {{/each}}
+    </ul>
+  </section>
+</template>
+
+<template name="profile">
+  <header>
+    <h1>{{firstname}} {{lastname}}</h1>
+  </header>
+  <section>
+    <ul class="guideslist">
+      {{#each itineraries}}
+        {{> itinerary}}
+      {{/each}}
+    </ul>
+  </section>
+</template>
+
+<template name="itineraries">
+  <header>
+    <h1>Itineraries</h1>
+  </header>
+  <section>
+    <ul class="guideslist">
+      {{#each itineraries}}
+        {{> itineraryListitem}}
+      {{/each}}
+    </ul>
+  </section>
+</template>
+
+<template name="itineraryListitem">
+  <li class="itinerary-listitem">
+    <a href="itineraries/{{_id}}" class="button">
+      <span class="text"><strong>{{name}}</strong></span>
+      <div class="description">{{text}}</div>
+    </a>
+  </li>
+</template>

@@ -1,0 +1,50 @@
+<template name="createitinerary">
+  <header>
+    <h1>Create itinerary</h1>
+    <div class="places">
+      <form class="find-places">
+        <input type="text" name="search-places" class="form-control search-places" placeholder="Search for places" />
+      </form>
+	  <ul class="foundplaces">
+	  </ul>
+    </div>
+  </header>
+  <section>
+    {{> map}}
+  </section>
+  <section>
+  	<ul class="stopslist slippylist">
+	  {{#each stops}}
+	    {{> stop}}
+	  {{/each}}
+	</ul>
+  </section>
+  <section>
+    <div class="add-btn">
+      <img src="/img/add139.png">
+    </div>
+  </section>
+  {{#famousContext id="mainCtx"}}
+    {{>Surface template="addplace" size='[400, 400]' align="[0.5,1]" origin="[0.5,1]"}}
+  {{/famousContext}}
+  <!-- <div class="add-dialogue">
+    Hej
+  </div> -->
+</template>
+
+<template name="place">
+  <li class="{{#if checked}}checked{{/if}}" _id="{{_id}}">
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+    <span class="text"><strong>{{name}}</strong></span>
+  </li>
+</template>
+
+<template name="stop">
+  <li class="stop" _id="{{business.id}}" order="{{business.order}}">
+    <span class="text"><strong>{{business.name}}</strong> - {{business.categories}}</span>
+    <span class="text">{{business.snippet_text}}</span>
+    <img src={{business.rating_img_url_small}}>
+    <span class="instant"></span>
+  </li>
+</template>
+

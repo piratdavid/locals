@@ -1,0 +1,17 @@
+<template name="interest">
+  <li class="{{#if checked}}checked{{/if}}" _id="{{_id}}">
+  	<!-- <button class="delete">&times;</button> -->
+
+    <input type="checkbox" checked="{{checked}}" class="toggle-checked" />
+
+    <span class="text"><strong>{{tag}}</strong>{{text}}</span>
+  </li>
+</template>
+
+<template name="choseninterest">
+  <li>
+  	<button class="delete">&times;</button>
+
+    <span class="text"><strong>{{tag}}</strong>{{text}}</span>
+  </li>
+</template>
