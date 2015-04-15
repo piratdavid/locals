@@ -2,44 +2,57 @@
 
 Session.set('places', new Array());
 
+var hideModifier = {};
+var showModifier = {};
+var top = function() {
+	return $(".createitinerary-map").position().top + $(".createitinerary-map").height();
+}
+
+Template.itineraries.helpers({
+	itineraries: function () {
+	  var interests = Session.get('choseninterests');
+	  var ids = [];
+	  for (var i = 0; interests[i]; i++) {
+	    ids.push(interests[i]._id);
+	  }
+
+	  return Itineraries.find({interests: {$in:ids}}, {});
+	}
+});
+
 Template.createitinerary.events({
-    "keyup .search-places": function (event) {
-		var searchtext = event.target.value;
-		if (!searchtext) {
-			$(".places ul").css("display", "none");
-		} else {
-			$(".places ul").css("display", "block");
-		}
-		Session.set("placesSearchtext", searchtext);
-		var parameters = {
-			term: searchtext, 
-			location: 'göteborg', 
-			limit: '5'
-		};
-		Meteor.call('searchBusiness', parameters, function(error, data) {
-			//var map = Session.get('map');
-			var parent = $(".foundplaces");
-			parent.empty();
-			$.each(data.businesses, function(idx, business) {
-				Blaze.renderWithData(Template.place, {name:business.name, _id: business.id}, parent[0]);
-			});
-		});
-    },
-    "click .foundplaces li": function (event) { 
-    	var placeId = $(event.currentTarget).attr('_id');
-    	Meteor.call('getBusiness', encodeURIComponent(placeId), function(error, data) {
-    		choosePlace(data);
-    	});
-      	$(".foundplaces").css("display", "none");
-    },
     "click .add-btn": function(event) {
-  //   	if ( $( ".add-dialogue:first" ).is( ":hidden" ) ) {
-		// 	$( ".add-dialogue" ).slideToggle();
-		// } else {
-		// 	$( ".add-dialogue" ).animate();
-		// }
-		Meteor.call('showAddDialogue');
+		showAddDialogue();
     }
+});
+
+Template.createitinerary.onRendered(function() {
+
+	var mainCtx = Engine.createContext();
+
+	var alignOriginModifier = new StateModifier({
+	  align: [0.5, 1],
+	  origin: [0.5, 1]
+	});
+	hideModifier = new StateModifier({
+	  transform: Transform.translate(0,$(window).height())
+	});
+	showModifier = new StateModifier();
+
+	var surface = new Surface({
+		classes: ["dialogue"],
+		size: [$(window).width(), $(window).height()],
+		content: ""
+	});
+
+	surface.on('deploy', function() {
+		Blaze.render(Template.addplace, $(".dialogue")[0]);
+
+	});
+
+	mainCtx.add(alignOriginModifier).add(showModifier)
+		.add(hideModifier).add(surface);
+
 });
 
 
@@ -54,6 +67,18 @@ Template.createitinerary.helpers({
 	} 
 });
 
+function showAddDialogue() {
+  showModifier.setTransform(
+    Transform.translate(0,-$(window).height()),
+    { duration : 200, curve: 'easeOut' }
+  );
+}
+function hideAddDialogue() {
+  showModifier.setTransform(
+    Transform.translate(0,$(window).height()),
+    { duration : 200, curve: 'easeIn' }
+  );
+}
 
 function choosePlace(business) {
 	if (business) {
@@ -137,26 +162,44 @@ function addSlippyList(ol) {
 	
 }
 
-Template.addplace.onRendered(function () {
-  var fview = FView.from(this);
-  var Transform = famous.core.Transform;
-  fview.modifier.setTransform(
-    Transform.translate(0,500)
-  );
 
-  Meteor.methods({
-	showAddDialogue: function() {
-	  fview.modifier.setTransform(
-	    Transform.translate(0,0),
-	    { duration : 200, curve: 'easeOut' }
-	  );
-	}
-  });
-});
 
 Template.addplace.events({
+	"keyup .search-places": function (event) {
+		var searchtext = event.target.value;
+		if (!searchtext) {
+			$(".places ul").css("display", "none");
+		} else {
+			$(".places ul").css("display", "block");
+		}
+		Session.set("placesSearchtext", searchtext);
+		var parameters = {
+			term: searchtext, 
+			location: 'göteborg', 
+			limit: '3'
+		};
+		Meteor.call('searchBusiness', parameters, function(error, data) {
+			//var map = Session.get('map');
+			var parent = $(".foundplaces");
+			parent.empty();
+			$.each(data.businesses, function(idx, business) {
+				Blaze.renderWithData(Template.place, {name:business.name, _id: business.id}, parent[0]);
+			});
+		});
+    },
+    "click .foundplaces li": function (event) { 
+    	var placeId = $(event.currentTarget).attr('_id');
+    	Meteor.call('getBusiness', encodeURIComponent(placeId), function(error, data) {
+    		choosePlace(data);
+    	});
+      	$(".foundplaces").css("display", "none");
+    },
 	"submit .add-form": function() {
-
-	}
+		hideAddDialogue();
+	},
+	"click .close-btn": function(event) {
+		event.preventDefault();
+		hideAddDialogue();
+    }
 })
 

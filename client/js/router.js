@@ -11,9 +11,11 @@
 
   Router.map(function() {
   	this.route('interests', {path: '/'}),
+    this.route('layout', {path: '/layout'}),
   	this.route('guides', {path: '/guides'}),
     this.route('itineraries', {path: '/itineraries'})
     this.route('createitinerary', {path: '/createitinerary'})
+    this.route('searchplace', {path: '/createitinerary/searchplace'})
   });
 
   Router.route('guides/:_id', function () {

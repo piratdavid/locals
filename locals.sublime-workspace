@@ -4,12 +4,100 @@
 		"selected_items":
 		[
 			[
-				"er",
-				"errorText"
+				"o",
+				"onRendered"
+			],
+			[
+				"su",
+				"surface"
+			],
+			[
+				"f",
+				"footer	Tag"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"te",
+				"template"
+			],
+			[
+				"sli",
+				"slideUp"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-top"
 			],
 			[
 				"pa",
-				"params"
+				"parentNode"
+			],
+			[
+				"c",
+				"createMarker"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"cal",
+				"calcRoute"
+			],
+			[
+				"s",
+				"stopslist"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"way",
+				"waypoints"
+			],
+			[
+				"set",
+				"setMap"
+			],
+			[
+				"ma",
+				"marker"
+			],
+			[
+				"directionS",
+				"directionsService"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"sear",
+				"searchtext"
+			],
+			[
+				"search",
+				"searchBusiness"
+			],
+			[
+				"er",
+				"errorText"
 			],
 			[
 				"size",
@@ -28,16 +116,8 @@
 				"mobilecheck"
 			],
 			[
-				"ba",
-				"background-size"
-			],
-			[
 				"ce",
 				"cover"
-			],
-			[
-				"bac",
-				"background"
 			],
 			[
 				"pad",
@@ -54,10 +134,6 @@
 			[
 				"tex",
 				"text-align"
-			],
-			[
-				"ma",
-				"margin-bottom"
 			],
 			[
 				"marg",
@@ -148,10 +224,6 @@
 				"foreach	foreach …"
 			],
 			[
-				"s",
-				"script"
-			],
-			[
 				"project",
 				"projectid"
 			],
@@ -166,10 +238,6 @@
 			[
 				"d",
 				"downloadTemplates"
-			],
-			[
-				"re",
-				"replaceWith"
 			],
 			[
 				"a",
@@ -200,10 +268,6 @@
 				"width"
 			],
 			[
-				"mar",
-				"margin-left"
-			],
-			[
 				"p",
 				"phone"
 			]
@@ -212,98 +276,74 @@
 	"buffers":
 	[
 		{
+			"file": "client/templates/createitinerary.html",
+			"settings":
+			{
+				"buffer_size": 1446,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/styles/locals.css",
+			"settings":
+			{
+				"buffer_size": 2129,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/templates/addplace.html",
+			"settings":
+			{
+				"buffer_size": 1294,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "client/js/router.js",
+			"settings":
+			{
+				"buffer_size": 923,
+				"line_ending": "Unix"
+			}
+		},
+		{
 			"file": "locals.js",
 			"settings":
 			{
-				"buffer_size": 7151,
+				"buffer_size": 2477,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "locals.css",
+			"file": "client/js/interests.js",
 			"settings":
 			{
-				"buffer_size": 633,
+				"buffer_size": 3303,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "add_to_db.js",
+			"file": "client/js/profile.js",
 			"settings":
 			{
-				"buffer_size": 2057,
+				"buffer_size": 97,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "locals.html",
+			"file": "client/js/guides.js",
 			"settings":
 			{
-				"buffer_size": 3067,
+				"buffer_size": 99,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "templates/map.html",
+			"file": "client/js/itinerary.js",
 			"settings":
 			{
-				"buffer_size": 126,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/map.js",
-			"settings":
-			{
-				"buffer_size": 637,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/yelp.js",
-			"settings":
-			{
-				"buffer_size": 414,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "libs/php/yelpApi.php",
-			"settings":
-			{
-				"buffer_size": 4435,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "templates/itinerary.html",
-			"settings":
-			{
-				"buffer_size": 199,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "router.js",
-			"settings":
-			{
-				"buffer_size": 744,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "client/templates/itinerary.html",
-			"settings":
-			{
-				"buffer_size": 123,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "bower_inactive.json",
-			"settings":
-			{
-				"buffer_size": 153,
+				"buffer_size": 4856,
 				"line_ending": "Unix"
 			}
 		},
@@ -391,10 +431,40 @@
 	"expanded_folders":
 	[
 		"/Users/david/Dev/locals",
-		"/Users/david/Dev/locals/libs/php"
+		"/Users/david/Dev/locals/client",
+		"/Users/david/Dev/locals/client/js",
+		"/Users/david/Dev/locals/client/styles",
+		"/Users/david/Dev/locals/client/templates",
+		"/Users/david/Dev/locals/packages/npm-container",
+		"/Users/david/Dev/locals/packages/npm-container/.npm",
+		"/Users/david/Dev/locals/packages/npm-container/.npm/package"
 	],
 	"file_history":
 	[
+		"/Users/david/Dev/locals/client/templates/interest.html",
+		"/Users/david/Dev/locals/client/templates/guide.html",
+		"/Users/david/Dev/locals/client/map.js",
+		"/Users/david/Dev/locals/locals.css",
+		"/Users/david/Dev/locals/Events.js",
+		"/Users/david/Dev/locals/client/itinerary.js",
+		"/Users/david/Dev/locals/client/interests.js",
+		"/Users/david/Dev/locals/locals.js",
+		"/Users/david/Dev/locals/styles.css",
+		"/Users/david/Dev/locals/add_to_db.js",
+		"/Users/david/Dev/locals/locals.html",
+		"/Users/david/Dev/locals/templates/map.html",
+		"/Users/david/Dev/locals/packages.json",
+		"/Users/david/Dev/locals/server/yelpApi.js",
+		"/Users/david/Dev/locals/router.js",
+		"/Users/david/Dev/locals/client/templates/itinerary.html",
+		"/Users/david/Dev/locals/client/templates/createitinerary.html",
+		"/Users/david/Dev/locals/bower.json",
+		"/Users/david/Dev/locals/locals.sublime-project",
+		"/Users/david/Dev/locals/client/guides.js",
+		"/Users/david/Dev/locals/client/itineraries.js",
+		"/Users/david/Dev/test/index.html",
+		"/Users/david/Dev/locals/templates/itinerary.html",
+		"/Users/david/Dev/locals/libs/php/yelpApi.php",
 		"/Users/david/Library/Application Support/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
 		"/Users/david/Dev/locals/map.js",
 		"/Applications/MAMP/htdocs/joinlocals.co/locals.css",
@@ -458,6 +528,16 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"7",
+			"z-i",
+			"z-",
+			"searchtext",
+			"places",
+			"addSlippyList",
+			"stops",
+			"window",
+			"itineraries",
+			"render",
 			"itiner",
 			"each",
 			"chose",
@@ -575,17 +655,7 @@
 			"function get",
 			"generate_response",
 			"get_file_object",
-			"set_additional_file_properties",
-			" o",
-			" o ",
-			" o",
-			"o",
-			"o->",
-			"preve",
-			"_get",
-			"get",
-			"assoc",
-			"dbhandler"
+			"set_additional_file_properties"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -607,110 +677,24 @@
 	"groups":
 	[
 		{
-			"selected": 7,
+			"selected": 8,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "locals.js",
+					"file": "client/templates/createitinerary.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7151,
+						"buffer_size": 1446,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2297,
-								2297
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "locals.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 633,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								633,
-								633
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 214.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "add_to_db.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2057,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1961,
-								1742
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 555.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "locals.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3067,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3067,
-								3067
+								468,
+								468
 							]
 						],
 						"settings":
@@ -720,27 +704,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1727.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 13,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "templates/map.html",
+					"buffer": 1,
+					"file": "client/styles/locals.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 126,
+						"buffer_size": 2129,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								126,
-								126
+								194,
+								194
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "client/templates/addplace.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1294,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1294,
+								1294
 							]
 						],
 						"settings":
@@ -751,140 +763,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "client/map.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 637,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								213,
-								193
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "client/yelp.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 414,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								69,
-								69
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 7,
-					"file": "libs/php/yelpApi.php",
+					"buffer": 3,
+					"file": "client/js/router.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4435,
+						"buffer_size": 923,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4191,
-								4191
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 340.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 8,
-					"file": "templates/itinerary.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 199,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								164,
-								164
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "router.js",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 744,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								744,
-								744
+								297,
+								297
 							]
 						],
 						"settings":
@@ -897,29 +793,29 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 11,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "client/templates/itinerary.html",
+					"buffer": 4,
+					"file": "locals.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 123,
+						"buffer_size": 2477,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								96,
-								96
+								2371,
+								2371
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -927,73 +823,131 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 11,
-					"file": "bower_inactive.json",
+					"buffer": 5,
+					"file": "client/js/interests.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 153,
+						"buffer_size": 3303,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								93
+								83,
+								83
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 15,
+					"stack_index": 6,
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 12,
+					"buffer": 6,
+					"file": "client/js/profile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 0,
+						"buffer_size": 97,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								97,
+								97
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
-							"word_wrap": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "client/js/guides.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 99,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								99,
+								99
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "client/js/itinerary.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4856,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1726,
+								1726
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 9.0,
+						"translation.y": 515.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
 				{
-					"buffer": 13,
+					"buffer": 9,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1017,7 +971,35 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Xdebug Client/Xdebug.tmLanguage",
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
 					"type": "text"
 				}
 			]
@@ -1027,7 +1009,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 14,
+					"buffer": 11,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1051,11 +1033,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 11,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 12,
 					"semi_transient": false,
 					"settings":
 					{
@@ -1079,7 +1061,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 12,
 					"type": "text"
 				}
 			]
@@ -1125,7 +1107,7 @@
 		"rows":
 		[
 			0.0,
-			0.7,
+			0.944690265487,
 			1.0
 		]
 	},
@@ -1142,7 +1124,7 @@
 	"project": "locals.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1172,7 +1154,7 @@
 		],
 		"width": 392.0
 	},
-	"selected_group": 1,
+	"selected_group": 0,
 	"settings":
 	{
 		"xdebug":
@@ -1238,6 +1220,11 @@
 				{
 					"group": 0,
 					"index": 7
+				},
+				"88":
+				{
+					"group": 0,
+					"index": 12
 				}
 			},
 			"restore_layout":

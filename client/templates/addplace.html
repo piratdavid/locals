@@ -1,10 +1,57 @@
 <template name="addplace">
   <header>
-    <h1>Header</h1>
+    <h1>Add place</h1><a href="#" class="close-btn right-header-btn">Close</a>
+  </header>
+  <section class="addplace-forms">
+    <div class="places">
+        <form class="add-form find-places">
+          <input type="text" name="search-places" class="form-control search-places" placeholder="Search for places" />
+        </form>
+      <ul class="foundplaces">
+      </ul>
+    </div>
+    <form class="add-form" role="form">
+    	<div class="form-group">
+			<label for="description">Description</label>
+      <textarea></textarea>
+			<!-- <input type="text" class="form-control" id="description"> -->
+		</div>
+    <div class="btn-footer">
+      <submit class="right-footer-btn btn btn-primary">Add</submit>
+    </div>
+    </form>
+  </section>
+  <!-- <footer>
+    <button type="submit" class="right-footer-btn btn btn-primary">Add</button>
+  </footer> -->
+</template>
+
+<template name="tabsSearchplace">
+  <header>
+    <h1>Search place</h1>
   </header>
   <section>
-    <form class="add-form">
+    <form class="add-form" role="form">
     	<input type="text" name="search-places" class="form-control search-places" placeholder="Search for places" />
+    	<div class="form-group">
+			<label for="email">Email address:</label>
+			<input type="email" class="form-control" id="email">
+		</div>
+    </form>
+  </section>
+</template>
+
+<template name="tabs.addplace">
+  <header>
+    <h1>Add place</h1>
+  </header>
+  <section>
+    <form class="add-form" role="form">
+    	<input type="text" name="search-places" class="form-control search-places" placeholder="Search for places" />
+    	<div class="form-group">
+			<label for="email">Email address:</label>
+			<input type="email" class="form-control" id="email">
+		</div>
     </form>
   </section>
 </template>

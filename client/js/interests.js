@@ -1,6 +1,6 @@
   Template.interests.rendered = function() {
-    if (!mobilecheck()) {
-      $(".chosen-select").chosen();
+    if (!App.mobilecheck()) {
+      //$(".chosen-select").chosen();
     }
   };
 

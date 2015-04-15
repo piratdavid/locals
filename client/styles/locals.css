@@ -9,13 +9,37 @@
 	display: none;
 }*/
 
+.test-surface {
+	background-color: green;
+}
+
+header {
+  	text-align: center;	
+  	padding: 5px !important;
+}
+
+h1 {
+	margin-right: 0px !important;
+}
+
+header a.right-header-btn {
+	padding: 10px;
+  	position: absolute;
+  	right: 5px;
+}
+
+header a.left-header-btn {
+	padding: 10px;
+}
+
 footer {
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	/*right: 30px;*/
 	background-color: gray;
 	height: 50px;
 	width: 100%;
+	z-index: 998;
 }
 
 footer a {
@@ -35,6 +59,23 @@ footer {
 	display: block;
 }
 
+.createitinerary-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 9;
+}
+
+.createitinerary-map {
+	position: fixed;
+	top: 60px;
+	left: 0;
+	width: 100%;
+	height: 200px;
+	z-index: 7;
+}
+
 .itinerary-listitem .description {
 	font-size: 9pt;
 }
@@ -45,8 +86,25 @@ footer {
   height: 200px;
 }
 
+.scrollcontainer {
+	/*overflow: hidden;
+	height: 200px;*/
+	padding-top: 260px;
+}
+
+/*.scrollcontainer > * {
+	overflow-y: auto;
+	height: 1000px;
+}*/
+
 .stop {
 	background-color: white;
+}
+
+.createitinerary-stopslist {
+	min-height: 100%;
+	position: relative;
+	padding-bottom: 134px;
 }
 
 
@@ -74,18 +132,65 @@ footer {
 }
 /* End: these are for Slip.js */
 
+.list-footer {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+.btn-container {
+  	margin-top: -134px;
+	position: absolute;
+  	width: 100%;
+  	height: 134px;
+  	/*bottom: 35px;*/
+}
 .add-btn {
 	margin-top: 10px;
+	margin-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 64px;
 }
-.add-dialogue {
-	background-color: white;
+.dialogue {
+	background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+}
+.dialogue footer {
+	position: absolute;
+	bottom: 0;
+	height: 60px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.dialogue footer .btn {
 	width: 100%;
-	height: 400px;
+	height: 50px;
+}
+
+.addplace-forms {
+	height: 100%;
 }
 
 .add-form {
-	/*background-color: green;*/
+	height: 100%;
+	padding: 20px 15px 15px 15px;
+}
+
+.add-form textarea {
+	width: 100%;
+}
+.add-form .btn-footer {
+	position: absolute;
+	width: 100%;
+	bottom: 150px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.add-form .btn-footer .btn {
+	width: 100%;
+	height: 50px;
+}
+.famous-container {
+  z-index: 9999;
+  position: fixed;
 }

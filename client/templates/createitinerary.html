@@ -1,32 +1,27 @@
 <template name="createitinerary">
-  <header>
+  <header class="createitinerary-header">
     <h1>Create itinerary</h1>
-    <div class="places">
-      <form class="find-places">
-        <input type="text" name="search-places" class="form-control search-places" placeholder="Search for places" />
-      </form>
-	  <ul class="foundplaces">
-	  </ul>
-    </div>
   </header>
-  <section>
+  <section class="createitinerary-map">
     {{> map}}
   </section>
-  <section>
-  	<ul class="stopslist slippylist">
-	  {{#each stops}}
-	    {{> stop}}
-	  {{/each}}
-	</ul>
-  </section>
-  <section>
-    <div class="add-btn">
-      <img src="/img/add139.png">
+  <section class="createitinerary-stopslist">
+    <div class="scrollcontainer">
+  	 <ul class="stopslist slippylist">
+  	  {{#each stops}}
+  	    {{> stop}}
+  	  {{/each}}
+	   </ul>
+    </div>
+    <div class="list-footer">
+      <div class="btn-container">
+        <div class="add-btn">
+          <img src="/img/add139.png">
+        </div>
+      </div>
     </div>
   </section>
-  {{#famousContext id="mainCtx"}}
-    {{>Surface template="addplace" size='[400, 400]' align="[0.5,1]" origin="[0.5,1]"}}
-  {{/famousContext}}
+
   <!-- <div class="add-dialogue">
     Hej
   </div> -->
