@@ -27,32 +27,7 @@ Template.createitinerary.events({
 });
 
 Template.createitinerary.onRendered(function() {
-
-	var mainCtx = Engine.createContext();
-
-	var alignOriginModifier = new StateModifier({
-	  align: [0.5, 1],
-	  origin: [0.5, 1]
-	});
-	hideModifier = new StateModifier({
-	  transform: Transform.translate(0,$(window).height())
-	});
-	showModifier = new StateModifier();
-
-	var surface = new Surface({
-		classes: ["dialogue"],
-		size: [$(window).width(), $(window).height()],
-		content: ""
-	});
-
-	surface.on('deploy', function() {
-		Blaze.render(Template.addplace, $(".dialogue")[0]);
-
-	});
-
-	mainCtx.add(alignOriginModifier).add(showModifier)
-		.add(hideModifier).add(surface);
-
+	createDialogue();
 });
 
 
@@ -66,6 +41,56 @@ Template.createitinerary.helpers({
 		return Session.get('places');
 	} 
 });
+
+function createDialogue() {
+
+	var mainCtx = Engine.createContext();
+
+	var alignOriginModifier = new StateModifier({
+	  align: [0.5, 1],
+	  origin: [0.5, 1]
+	});
+	hideModifier = new StateModifier({
+	  transform: Transform.translate(0,$(window).height())
+	});
+	showModifier = new StateModifier();
+
+	var view = new famous.core.View();
+
+	var surface = new Surface({
+		classes: ["dialogue"],
+		size: [$(window).width(), $(window).height()-top()],
+		content: ""
+	});
+
+	surface.on('deploy', function() {
+		Blaze.render(Template.addplace, $(".dialogue")[0]);
+	});
+
+	view.add(surface);
+
+	mainCtx.add(alignOriginModifier).add(showModifier)
+		.add(hideModifier).add(view);
+
+	var inputModifier = new Modifier({
+	  	origin: [0.5,0.5],
+		align: [0.5,0.5]
+	});
+
+	// var inputSurface = new famous.surfaces.InputSurface({
+	// 	classes: ["form-control"],
+	// 	size: [300, 20]
+	// });
+	var inputSurface = new Surface({
+		size: [300, 20]
+	});
+
+	view.add(inputModifier).add(inputSurface);
+
+	inputSurface.on('deploy', function() {	
+		Blaze.render(Template.searchplace, this._currentTarget);
+	});
+}
 
 function showAddDialogue() {
   showModifier.setTransform(
@@ -165,6 +190,16 @@ function addSlippyList(ol) {
 
 
 Template.addplace.events({
+	"submit .add-form": function() {
+		hideAddDialogue();
+	},
+	"click .close-btn": function(event) {
+		event.preventDefault();
+		hideAddDialogue();
+    }
+});
+
+Template.searchplace.events({
 	"keyup .search-places": function (event) {
 		var searchtext = event.target.value;
 		if (!searchtext) {
@@ -193,13 +228,6 @@ Template.addplace.events({
     		choosePlace(data);
     	});
       	$(".foundplaces").css("display", "none");
-    },
-	"submit .add-form": function() {
-		hideAddDialogue();
-	},
-	"click .close-btn": function(event) {
-		event.preventDefault();
-		hideAddDialogue();
     }
 })
 

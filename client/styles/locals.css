@@ -174,9 +174,14 @@ footer {
 	height: 100%;
 	padding: 20px 15px 15px 15px;
 }
-
-.add-form textarea {
-	width: 100%;
+.add-form span {
+	
+}
+.add-form span img {
+	display: inline;
+}
+.add-form span input {
+	display: inline;
 }
 .add-form .btn-footer {
 	position: absolute;
@@ -194,3 +199,70 @@ footer {
   z-index: 9999;
   position: fixed;
 }
+
+.question {
+	position: relative;
+	padding: 10px 0;
+}
+
+.question img {
+
+}
+/*&:first-of-type
+  padding-top: 0
+  
+&:last-of-type
+  padding-bottom: 0
+  */
+/*label {}
+  transform-origin: left center
+  color: $red
+  font-weight: 100
+  letter-spacing: 0.01em
+  font-size: 17px
+  box-sizing: border-box
+  padding: 10px 15px
+  display: block
+  position: absolute
+  margin-top: -40px
+  z-index: 2
+  pointer-events: none
+  */
+
+/*input[type="text"] {*/
+.question {
+  /*appearance: none;*/
+  height: 45px;
+  background-color: none;
+  border: 1px solid red;
+  line-height: 0;
+  font-size: 17px;
+  /*width: 100%;*/
+  /*display: block;*/
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: red;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+ } 
+
+ .question input[type="text"] {
+ 	outline: none;
+    outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+ 	border: none;
+ 	height: 37px;
+ 	background-image: linear-gradient(to bottom, #d0edf5, #e1e5f0 100%);
+ 	margin-bottom: 0;
+ }
+
+ .question input[type="text"]:focus {
+    outline: none;
+    outline-style:none;
+	box-shadow:none;
+	border-color:transparent;
+  }
